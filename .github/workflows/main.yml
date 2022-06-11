@@ -34,8 +34,8 @@ jobs:
       
         uses: docker/build-push-action@v3.0.0
         with:
-          context: ./src
-          file: ./src/dockerfile
+          context: ./kube-news/src
+          file: ./kube-news/src/dockerfile
           push: true
           tags: |
               ofmoura/kube-news:latest

@@ -34,10 +34,10 @@ jobs:
       
         uses: docker/build-push-action@v3.0.0
         with:
-          file: ./src/dockerfile
           context: ./src
+          file: ./src/dockerfile
           push: true
-          tags: 
+          tags: |
               ofmoura/kube-news:latest
               ofmoura/kube-news:${{github.run_number}}
         
